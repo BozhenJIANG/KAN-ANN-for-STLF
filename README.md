@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documentation provides details on the implementation of a hybrid model combining Kolmogorov-Arnold Networks (KAN) and Artificial Neural Networks (ANN) for interpretable and enhanced short-term load forecasting (STLF). The model is based on a paper published on TechRxiv and can be found by searching for the corresponding article.
+This documentation provides details on the implementation of "A Hybrid Kolmogorov-Arnold Networks and Artificial Neural Network based Model for Interpretable and Enhanced Short-term Load Forecasting". The model is based on a paper published on TechRxiv and can be found by searching for the corresponding article.
 
 ## Dataset Source
 
