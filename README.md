@@ -25,7 +25,7 @@ To set up the environment for running the KAN-NN-for-STLF model, follow these st
 
    **Note**: Since the dataset and its processing code originate from the `lstm-load-forecasting` repository, you may also need to install:
    ```bash
-   pip install pandas==2.2.2 beautifulsoup4==0.2.0
+   pip install pandas==2.2.2 beautifulsoup4==4.12.3
    ```
 
    **Note**: The version numbers listed are provided as an example; check for the latest stable versions or compatibility with your system.
