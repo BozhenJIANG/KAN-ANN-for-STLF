@@ -42,6 +42,9 @@ To run the model, follow these steps:
 2. **Execute the code**:
    Execute the code line by line to run the model and generate the forecast results.
 
+Note:
+> The spring case is currently annotated in English, whereas the some annotations for the remaining three seasons are in Chinese. However, all annotations will be updated to English in due course.
+
 ### Attention
 
 - **Reproducing Results**: If you aim to reproduce the results reported in the paper, please ensure not to change any parameters in the model configuration.
