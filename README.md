@@ -20,7 +20,7 @@ To set up the environment for running the KAN-NN-for-STLF model, follow these st
 
 2. **Install required packages**:
    ```bash
-   pip install matplotlib==3.6.2 numpy==1.24.4 scikit_learn==1.1.3 setuptools==65.5.0 torch==2.2.2 tqdm==4.66.2 xgboost==2.1.1
+   pip install pykan==0.0.5 matplotlib==3.6.2 numpy==1.24.4 scikit_learn==1.1.3 setuptools==65.5.0 torch==2.2.2 tqdm==4.66.2 xgboost==2.1.1
    ```
 
    **Note**: Since the dataset and its processing code originate from the `lstm-load-forecasting` repository, you may also need to install:
