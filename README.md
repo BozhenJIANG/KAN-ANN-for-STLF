@@ -54,5 +54,4 @@ Note:
 
 If the code provided is helpful in your research, kindly cite the original paper:
 
-> Bozhen Jiang, Yidi Wang, Qin Wang and Hua Geng. "A Hybrid Kolmogorov-Arnold Networks and Artificial Neural Network based Model for Interpretable and Enhanced Short-term Load Forecasting." TechRxiv, September 6, 2024. DOI: 10.36227/techrxiv.172565795.51369458/v1.
-
+> Bozhen Jiang, Yidi Wang, Qin Wang and Hua Geng. "A Hybrid Kolmogorov-Arnold Networks and Artificial Neural Network based Model for Interpretable and Enhanced Short-term Load Forecasting." TechRxiv, September 24, 2024. DOI: 10.36227/techrxiv.172565795.51369458/v2
