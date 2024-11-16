@@ -57,4 +57,5 @@ Note:
 
 If the code provided is helpful in your research, kindly cite the original paper:
 > B. Jiang, Y. Wang, Q. Wang and H. Geng, "A Novel Interpretable Short-Term Load Forecasting Method Based on Kolmogorov-Arnold Networks," IEEE Transactions on Power Systems, 2024. DOI: 10.1109/TPWRS.2024.3498452
+
 > B. Jiang, Y. Wang, Q. Wang and H. Geng, "A Hybrid Kolmogorov-Arnold Networks and Artificial Neural Network based Model for Interpretable and Enhanced Short-term Load Forecasting," TechRxiv, September 24, 2024. DOI: 10.36227/techrxiv.172565795.51369458/v2
