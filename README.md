@@ -1,9 +1,8 @@
-# KAN-NN-for-STLF
+# KAN-ANN-for-STLF
 
 ## Overview
 
-This documentation provides details on the implementation of "A Hybrid Kolmogorov-Arnold Networks and Artificial Neural Network based Model for Interpretable and Enhanced Short-term Load Forecasting". The model is based on a paper published on TechRxiv and can be found by searching for the corresponding article.
-
+This documentation provides details on the implementation of "A Hybrid KAN-ANN based Model for Interpretable and Enhanced Short-term Load Forecasting".
 ## Dataset Source
 
 The dataset used for this implementation can be found at [https://github.com/dafrie/lstm-load-forecasting](https://github.com/dafrie/lstm-load-forecasting). This repository contains electricity load forecasting data for Switzerland, along with related weather and calendar information.
@@ -20,7 +19,7 @@ To set up the environment for running the KAN-NN-for-STLF model, follow these st
 
 2. **Install required packages**:
    ```bash
-   pip install pykan==0.0.5 matplotlib==3.6.2 numpy==1.24.4 scikit_learn==1.1.3 setuptools==65.5.0 torch==2.2.2 tqdm==4.66.2 xgboost==2.1.1
+   pip install pykan==0.2.8 matplotlib==3.6.2 numpy==1.24.4 scikit_learn==1.1.3 setuptools==65.5.0 torch==2.2.2 tqdm==4.66.2 xgboost==2.1.1
    ```
 
    **Note**: Since the dataset and its processing code originate from the `lstm-load-forecasting` repository, you may also need to install:
@@ -30,8 +29,37 @@ To set up the environment for running the KAN-NN-for-STLF model, follow these st
 
    **Note**: The version numbers listed are provided as an example; check for the latest stable versions or compatibility with your system.
 
-3. **Using Virtual Environments in Jupyter Notebook and Python**：
-   Please see this website to use the "kan" vitual environment in Jupyter Notebook: https://janakiev.com/blog/jupyter-virtual-envs/
+3. Some modification for pykan 
+
+   In the `prune_node` function in the source code, we changed `auto_save` to `False`.  
+   
+   In the `fit` function, we annotated the following code to avoid printing internal information:  
+   
+   ```python
+   # if _ % log == 0:
+   #     if display_metrics == None:
+   #         pbar.set_description("| train_loss: %.2e | test_loss: %.2e | reg: %.2e | " % (torch.sqrt(train_loss).cpu().detach().numpy(), torch.sqrt(test_loss).cpu().detach().numpy(), reg_.cpu().detach().numpy()))
+   #     else:
+   #         string = ''
+   #         data = ()
+   #         for metric in display_metrics:
+   #             string += f' {metric}: %.2e |'
+   #             try:
+   #                 results[metric]
+   #             except:
+   #                 raise Exception(f'{metric} not recognized')
+   #             data += (results[metric][-1],)
+   #         pbar.set_description(string % data)
+   ```
+   
+   In the `prune_input` function, we also modified it to return `input_mask` alongside the model:  
+   
+   ```python
+   return model2, input_mask
+   ```
+
+4. **Using Virtual Environments in Jupyter Notebook and Python**：
+   Please see this website to use the "kan" vitual environment in Jupyter Notebook: https://stackoverflow.com/questions/42449814/running-jupyter-notebook-in-a-virtualenv-installed-sklearn-module-not-available
 
 ## Usage
 
@@ -44,9 +72,6 @@ To run the model, follow these steps:
 
 2. **Execute the code**:
    Execute the code line by line to run the model and generate the forecast results.
-
-Note:
-> The spring case is currently annotated in English, whereas the some annotations for the remaining three seasons are in Chinese. However, all annotations will be updated to English in due course.
 
 ### Attention
 
