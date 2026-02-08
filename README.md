@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documentation provides details on the implementation of "A Hybrid KAN-ANN based Model for Interpretable and Enhanced Short-term Load Forecasting".
+This documentation provides the simplified implementation of "A Hybrid KAN-ANN based Model for Interpretable and Enhanced Short-term Load Forecasting".
 ## Dataset Source
 
 The dataset used for this implementation can be found at [https://github.com/dafrie/lstm-load-forecasting](https://github.com/dafrie/lstm-load-forecasting). This repository contains electricity load forecasting data for Switzerland, along with related weather and calendar information.
@@ -65,18 +65,11 @@ To set up the environment for running the KAN-NN-for-STLF model, follow these st
 
 ### Running the Model
 
-To run the model, follow these steps:
-
 1. **Open the Jupyter Notebook**:
    Use the Jupyter Notebook to open the file `"NN+KAN-SPRING.ipynb"`.
 
 2. **Execute the code**:
    Execute the code line by line to run the model and generate the forecast results.
-
-### Attention
-
-- **Reproducing Results**: If you aim to reproduce the results reported in the paper, please ensure not to change any parameters in the model configuration.
-- **Exploration and Improvement**: If you wish to explore and potentially improve the model's accuracy, feel free to modify the parameters and experiment with different settings.
 
 ## Citation
 
